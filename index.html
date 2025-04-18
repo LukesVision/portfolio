@@ -1,98 +1,84 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Portfolio</title>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<header>
-<nav>
-<h1>Il Mio Portfolio</h1>
-<button class="hamburger" id="hamburger">
-<div class="bar"></div>
-<div class="bar"></div>
-<div class="bar"></div>
-</button>
-<ul id="nav-links">
-<li><a href="#about">Chi sono</a></li>
-<li><a href="#progetti">Progetti</a></li>
-<li><a href="#contatti">Contatti</a></li>
-<li><button id="toggle-dark">🌙</button></li>
-</ul>
-</nav>
-</header>
-<main>
-<!-- Sezione About -->
-<section class="section" id="about">
-<div class="about-container">
-<img alt="La mia foto profilo" class="profile-img" src="img/profilo.jpg"/>
-<div class="about-text">
-<h2>Chi sono</h2>
-<p>Ciao! Mi chiamo Luca e sono l’autore di questa pagina web.
-            Come potrai scoprire dai miei progetti, ho una grande passione per la scrittura. Amo raccontare storie, esplorare idee e trasformarle in contenuti creativi.</p>
-</div>
-</div>
-</section>
-<!-- Sezione Progetti -->
-<section class="section" id="progetti">
-<h2>I miei progetti</h2>
-<a class="project-link" href="scintilla_perduta.html"><div class="project-card">
-<img alt="scintilla_perduta" class="project-img" src="img/scintilla_perduta.jpg"/>
-<div class="project-text">
-<h3>La Scintilla Perduta</h3>
-<p>
-            In una serata piovosa, Ryota Nishikawa incontra Aiko Sakamoto, una ragazza tormentata dal dolore silenzioso. Deciso ad aiutarla, tra i due nasce una connessione che cambierà le loro vite per sempre. Ma il peso del passato e il destino li separano, e il rimpianto di ciò che è stato perso perseguita Ryota. Quando le loro strade si incrociano nuovamente, la scintilla dell'amore riaccende la fiamma, ma circostanze difficili minacciano di separali per sempre. Un romanzo di amore, sacrificio e speranza.
-        </p>
-
-</div>
-</div></a>
-<a class="project-link" href="ombre_di_ferro.html"><div class="project-card">
-<img alt="ombre_di_ferro" class="project-img" src="img/ombre_di_ferro.jpg"/>
-<div class="project-text">
-<h3>Ombre di Ferro</h3>
-<p>
-            Aedrian è un soldato che ha sempre potuto fare affidamento sul suo sesto senso per evitare il pericolo, ma quando la guerra lo trascina in un'imboscata sanguinosa, scopre che il vero nemico non è solo umano. Tra le ombre e i mostri che minacciano la sua realtà, Aedrian si trova costretto a fare i conti con il dolore del passato e con una verità terribile: la guerra non si combatte solo sul campo di battaglia. Un racconto intenso di coraggio e confronto con l'oscurità.
-        </p>
-
-</div>
-</div></a>
-</section>
-<!-- Sezione Progetti
-    <section id="progetti" class="section">
+  <header>
+    <nav>
+      <h1>Il Mio Portfolio</h1>
+      <button class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <ul id="nav-links">
+        <li><a href="#about">Chi sono</a></li>
+        <li><a href="#progetti">Progetti</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+        <li><button id="toggle-dark">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Sezione About -->
+    <section class="section" id="about">
+      <div class="about-container">
+        <img alt="La mia foto profilo" class="profile-img" src="img/profilo.jpg"/>
+        <div class="about-text">
+          <h2>Chi sono</h2>
+          <p>Ciao! Mi chiamo Luca e sono l’autore di questa pagina web. Come potrai scoprire dai miei progetti, ho una grande passione per la scrittura. Amo raccontare storie, esplorare idee e trasformarle in contenuti creativi.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Sezione Progetti -->
+    <section class="section" id="progetti">
       <h2>I miei progetti</h2>
-      <div class="project-card">
-        <img src="img/scintilla_perduta.jpg" alt="scintilla_perduta" class="project-img" />
-        <h3>La Scintilla Perduta</h3>
-        <p>In una serata piovosa, Ryota Nishikawa incontra Aiko Sakamoto, una ragazza tormentata dal dolore silenzioso. Deciso ad aiutarla, tra i due nasce una connessione che cambierà le loro vite per sempre. Ma il peso del passato e il destino li separano, e il rimpianto di ciò che è stato perso perseguita Ryota. Quando le loro strade si incrociano nuovamente, la scintilla dell'amore riaccende la fiamma, ma circostanze difficili minacciano di separali per sempre. Un romanzo di amore, sacrificio e speranza.
-
-        </p>
+      <div class="project-container">
+        <a class="project-link" href="scintilla_perduta.html">
+          <div class="project-card">
+            <img alt="scintilla_perduta" class="project-img" src="img/scintilla_perduta.jpg"/>
+            <div class="project-text">
+              <h3>La Scintilla Perduta</h3>
+              <p>In una serata piovosa, Ryota Nishikawa incontra Aiko Sakamoto, una ragazza tormentata dal dolore silenzioso. Deciso ad aiutarla, tra i due nasce una connessione che cambierà le loro vite per sempre...</p>
+            </div>
+          </div>
+        </a>
+        
+        <a class="project-link" href="ombre_di_ferro.html">
+          <div class="project-card">
+            <img alt="ombre_di_ferro" class="project-img" src="img/ombre_di_ferro.jpg"/>
+            <div class="project-text">
+              <h3>Ombre di Ferro</h3>
+              <p>Aedrian è un soldato che ha sempre potuto fare affidamento sul suo sesto senso per evitare il pericolo, ma quando la guerra lo trascina in un'imboscata sanguinosa...</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="project-card">
-        <img src="img/ombre_di_ferro.jpg" alt="Portfolio Responsive" class="project-img" />
-        <h3>Ombre di Ferro</h3>
-        <p>Aedrian è un soldato che ha sempre potuto fare affidamento sul suo sesto senso per evitare il pericolo, ma quando la guerra lo trascina in un'imboscata sanguinosa, scopre che il vero nemico non è solo umano. Tra le ombre e i mostri che minacciano la sua realtà, Aedrian si trova costretto a fare i conti con il dolore del passato e con una verità terribile: la guerra non si combatte solo sul campo di battaglia. Un racconto intenso di coraggio e confronto con l'oscurità.</p>
-      </div>
-    </section> -->
+    </section>
+    
+    <!-- Sezione Contatti -->
     <section id="contatti" class="section">
-      <h2>Contattami</h2>
+      <h2 class="contattami-text">Contattami</h2>
       <form action="https://formsubmit.co/justmindo97@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Nome" required />
         <input type="email" name="email" placeholder="Email" required />
         <textarea name="message" rows="5" placeholder="Messaggio" required></textarea>
         <button type="submit">Invia</button>
-    
-        <!-- Protezioni anti-spam opzionali -->
-        <!-- <input type="hidden" name="_captcha" value="false"> -->
         <input type="text" name="_honey" style="display:none">
       </form>
     </section>
   </main>
-<footer>
-<p>© 2025 Luke's Vision</p>
-</footer>
-<script src="script.js"></script>
-</main></body>
+  
+  <footer>
+    <p>© 2025 Luke's Vision</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
 </html>

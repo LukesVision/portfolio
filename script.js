@@ -29,8 +29,8 @@ sections.forEach(section => {
 });
 
 // --- Invia form ---
-document.getElementById("contatti").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Grazie per avermi contattato! Ti risponderò presto.");
-    this.reset();
-  });
+// document.getElementById("contatti").addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     alert("Grazie per avermi contattato! Ti risponderò presto.");
+//     this.reset();
+//   });
