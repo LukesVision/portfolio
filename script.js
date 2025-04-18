@@ -28,9 +28,20 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
---- Invia form ---
-document.getElementById("contatti").addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Grazie per avermi contattato! Ti risponderò presto.");
-    this.reset();
-  });
+
+const form = document.getElementById('contatti');
+const messaggio = document.getElementById('conferma-messaggio');
+
+form.addEventListener('invia', function (e) {
+  setTimeout(() => {
+    form.reset();
+    messaggio.style.display = 'block';
+  }, 1000);
+});
+
+// --- Invia form ---
+// document.getElementById("contatti").addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     alert("Grazie per avermi contattato! Ti risponderò presto.");
+//     this.reset();
+//   });
