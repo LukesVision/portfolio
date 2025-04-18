@@ -28,9 +28,9 @@ sections.forEach(section => {
   observer.observe(section);
 });
 
-// --- Invia form ---
-// document.getElementById("contatti").addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     alert("Grazie per avermi contattato! Ti risponderò presto.");
-//     this.reset();
-//   });
+--- Invia form ---
+document.getElementById("contatti").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Grazie per avermi contattato! Ti risponderò presto.");
+    this.reset();
+  });
