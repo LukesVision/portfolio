@@ -29,7 +29,7 @@ sections.forEach(section => {
 });
 
 // --- Invia form ---
-document.getElementById("contact-form").addEventListener("submit", function (e) {
+document.getElementById("contatti").addEventListener("submit", function (e) {
     e.preventDefault();
     alert("Grazie per avermi contattato! Ti risponderò presto.");
     this.reset();
