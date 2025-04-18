@@ -212,47 +212,56 @@
   }
   
   /* ====== FORM ====== */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 400px;
-  }
-  
-  input, textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  body.dark-mode input,
-  body.dark-mode textarea {
-    background-color: #222;
-    color: white;
-    border: 1px solid #444;
-  }
-  
-  button {
-    padding: 0.5rem;
-    background-color: var(--primary);
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: var(--primary-hover);
-  }
-  
-.project-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+  /* ====== FORM RESTYLING ====== */
+#contatti form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  max-width: 500px;
+  width: 100%;
 }
 
-.project-link:hover .project-card {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+body.dark-mode #contatti form {
+  background-color: #1e1e1e;
+  color: var(--text-dark);
+}
+
+#contatti input,
+#contatti textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contatti input:focus,
+#contatti textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(51, 51, 51, 0.1);
+  outline: none;
+}
+
+#contatti button[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+#contatti button[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  #contatti form {
+    padding: 1rem;
+  }
 }
 
 /* Modifiche alla sezione About */
