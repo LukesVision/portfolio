@@ -227,11 +227,16 @@
   }
 
   #contatti h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+  body.dark-mode #contatti h2 {
+  color: var(--text-dark);
+}
+
   
   body.dark-mode #contatti form {
     background-color: #1e1e1e;
