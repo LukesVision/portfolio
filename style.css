@@ -146,8 +146,7 @@
   line-height: 1.8;
 }
   
-  @media (min-width: 768px) {
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .about-container {
     gap: 3rem;
   }
@@ -156,10 +155,9 @@
     width: 200px;
     height: 200px;
   }
-}
 
-  
-  /* ====== PROGETTI ====== */
+
+ /* ====== PROGETTI ====== */
   .project-card {
     display: flex;
     flex-direction: column;
