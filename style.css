@@ -227,16 +227,11 @@
   }
 
   #contatti h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--text-light);
-}
-
-  body.dark-mode #contatti h2 {
-  color: var(--text-dark);
-}
-
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
   
   body.dark-mode #contatti form {
     background-color: #1e1e1e;
@@ -325,7 +320,7 @@
   text-overflow: ellipsis;
 }
 
- @keyframes fadeIn {
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-10px);
@@ -342,4 +337,4 @@
   margin-top: 1rem;
   font-weight: bold;
   animation: fadeIn 0.6s ease forwards;
-} 
+}
